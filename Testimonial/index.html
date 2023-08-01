@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Testimonial</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <section class="testimonial-area">
+            <div class="container">
+                <div class="sec-title">
+                    <h2>Our Testimonial</h2>
+                    <p>What client say about us?</p>
+                </div>
+                <div class="testimonial-content owl-carousel">
+                    <div class="single-testimonial">
+                    <p>Lakshmi, a bright 12-year-old from a small village in Rajasthan, had to drop out of school due to financial constraints. When her teacher introduced her to Edumotive, she started studying independently. Today, she has caught up to her age-appropriate grade level, outshining many of her peers and aspiring to become a doctor.</p>
+                    <div class="client-info">
+                        <div class="client-pic">
+                            <a href="#">
+                                <img src="img/img2.webp">
+                            </a>
+                        </div>
+                        <div class="client-details">
+                            <h6>Lakshmi's Journey</h6>
+                            <span>Designer, LLC Team</span>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="single-testimonial">
+                        <p> Ali, a 14-year-old refugee in Lebanon, had no access to formal education. Through Edumotive, he found a way to continue his studies. His progress has been significant, and he recently received a scholarship from a local university for his demonstrated resilience and commitment to education.</p>
+                        <div class="client-info">
+                            <div class="client-pic">
+                                <a href="#">
+                                    <img src="img/img1.avif">
+                                </a>
+                            </div>
+                            <div class="client-details">
+                                <h6>Ali's Transformation</h6>
+                                <span>Designer, LLC Team</span>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="single-testimonial">
+                            <p>Martha, a single mother from Detroit, had to drop out of high school. She found Edumotive while looking for resources to help her kids with their homework. Inspired by the lessons, she started studying herself and recently earned her high school equivalency diploma.</p>
+                            <div class="client-info">
+                                <div class="client-pic">
+                                    <a href="#">
+                                        <img src="img/img2.webp">
+                                    </a>
+                                </div>
+                                <div class="client-details">
+                                    <h6>Martha's Breakthrough</h6>
+                                    <span>Designer, LLC Team</span>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="single-testimonial">
+                                <p>Pedro, an 11-year-old boy from rural Brazil, couldn't attend school regularly due to his family's agricultural commitments. Edumotive offered him a flexible learning schedule, and despite his challenging circumstances, he has managed to excel in his studies, particularly in math and science.</p>
+                                <div class="client-info">
+                                    <div class="client-pic">
+                                        <a href="#">
+                                            <img src="img/img1.avif">
+                                        </a>
+                                    </div>
+                                    <div class="client-details">
+                                        <h6>Pedro's Success</h6>
+                                        <span>Designer, LLC Team</span>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="single-testimonial">
+                                    <p>Chen, a 15-year-old girl from rural China, was struggling with English - a critical subject for her career aspirations. The language lessons on Edumotive helped her significantly, and she's now top of her class in English. She dreams of studying abroad and is well on her path to achieve it.</p>
+                                    <div class="client-info">
+                                        <div class="client-pic">
+                                            <a href="#">
+                                                <img src="img/img2.webp">
+                                            </a>
+                                        </div>
+                                        <div class="client-details">
+                                            <h6>Chen's Aspiration</h6>
+                                            <span>Designer, LLC Team</span>
+                                        </div>
+                                        </div>
+                                    </div>
+                </div>
+
+            </div>
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.testimonial-content').owlCarousel({
+                        loop:true,
+                        nav:false,
+                        dots:true,
+                        margin:50,
+                        autoplay:true,
+                        autoplayTimeout:4000,
+                        smartSpeed:800,
+                        responsive:{
+                            0:{
+                                items:1
+                            },
+                            600:{
+                                items:1
+                            },
+                            1000:{
+                                items:2
+                            }
+                        }
+                    })
+            });
+        </script>
+    </body>
+</html>
