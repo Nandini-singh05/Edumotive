@@ -1,14 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
- 
-
+<html lang="en" dir="ltr">
 <head>
-       
     <meta charset="UTF-8" />
-       
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-       
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="feedback.css">
     <link rel="apple-touch-icon" sizes="57x57" href="Images/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="Images/favicon/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="Images/favicon/apple-icon-72x72.png">
@@ -26,15 +22,13 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="Images/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-       
     <link rel="stylesheet" href="jobstyle.css" >
-        <title>Your Feedback</title>
-     
+    <title>Feedback</title>
 </head>
 
 
 <body>
-         <style>
+         <!--<style>
         * {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             box-sizing: border-box;
@@ -93,46 +87,70 @@
         input[type="submit"]:hover {
             background-color: rgba(82, 156, 138, 0.759);
         }
-    </style>
-        <div class="container">
-              <form>
-                    <fieldset>
-                          <h1 class="mainheading">Feedback Form</h1>
-                          <h4>It's compulsory to fill up all the fields below.</h4>
-                        </fieldset>
+    </style> -->
+     <div class="container">
+        <div class="text">Share Your Suggestions</div>
+        <form>
+              <div class="form-row">
 
-                    <p>
-                          Your Name:
-                          <input             type="text"             name="name"             id=""            
-                    placeholder="Enter Your Name"             required           />
-                        </p>
+                <div class="input-data">
+                <input type="text" required />
+                <div class="underline"></div>
+                <label for="">First Name</label>
+                </div>
 
-                    <p>
-                          Your Email: <input type="email" name="email" id="email" required />
-                        </p>
+                <div class="input-data">
+                    <input type="text" required>
+                    <div class="underline"></div>
+                    <label for="">Last Name</label>
+                 </div>
+            </div>
 
-                    <p>
-                          Message:
-                          <textarea             name="message"             id="message"            
-                    placeholder="Enter your feedback for us."             cols="60"             rows="7"        
-                     ></textarea>
-                        </p>
 
-                    <p>
-                          Rating:
-                          <select>
-                                <option value="">Select the options</option>
-                                <option value="job_inquiry">1 STAR</option>
-                                <option value="complaint">2 STAR</option>
-                                <option value="complaint">3 STAR</option>
-                                <option value="complaint">4 STAR</option>
-                                <option value="complaint">5 STAR</option>
-                              </select>
-                        </p>
+            <div class="form-row">
+                <div class="input-data">
+                   <input type="text" required>
+                   <div class="underline"></div>
+                   <label for="">Email Address</label>
+                </div>
 
-                    <input id="submit" type="submit" value="Send" onclick="auth()">
-                  </form>
-            </div>
+                <div class="input-data">
+                    <div class="underline"></div>
+                    <br>
+                 <select class="dropdown">
+                    <option value="">Select the options</option>
+                    <option value="job_inquiry">⭐</option>
+                    <option value="complaint">⭐⭐</option>
+                    <option value="complaint">⭐⭐⭐</option>
+                    <option value="complaint">⭐⭐⭐⭐</option>
+                    <option value="complaint">⭐⭐⭐⭐⭐</option>
+                    </select>
+              
+                </div>
+            </div>
+
+
+        <div class="form-row">
+                <div class="input-data textarea">
+                   <textarea rows="8" cols="80" required></textarea>
+                   <br />
+                   <div class="underline"></div>
+                   <label for="">Write your message</label>
+                 </div>
+                 </div>
+    
+                   <div class="form-row submit-btn">
+                      <div class="input-data">
+                         <div class="inner"></div>
+                         <input type="submit" value="submit">
+                      </div>
+                   </div>
+                </div>
+            
+          </form>
+       </div>
+     </body>
+  </html>
         <!-- <script>
         function auth()
         {
@@ -141,6 +159,3 @@
         }
 
         </script> -->
-      </body>
-
-</html>
